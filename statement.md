@@ -1,76 +1,37 @@
-# Project Statement – Library Management System
+# Library Management System – Project Statement
 
-## 1. Problem Statement
-In many small libraries and student communities, books are still managed manually.  
-Maintaining records becomes difficult when there is no proper system to keep track of  
-available books, issued books, and returned books.  
-To solve this problem, I designed a simple console-based Library Management System  
-that helps manage the basic operations of a library easily.
+## 🔹 Problem Statement
+Managing books in a library manually becomes difficult as the number of books and students increases. Tasks like adding new books, keeping track of availability, issuing books, and returning them can take a lot of time and often lead to mistakes.  
+To solve this problem, we need a simple software system that can help librarians or students manage books efficiently.
 
-## 2. Scope of the Project
-The project focuses on the following operations:
+## 🔹 Scope of the Project
+The scope of this project includes developing a basic console-based Java application that helps manage a small library’s day-to-day operations.  
+The system will allow the user to:
+- Add new books into the system  
+- View all available books  
+- Issue books to students  
+- Return issued books  
+- Maintain simple inventory count  
 
-- Adding new books to the library.  
-- Displaying all available books.  
-- Issuing a book to a user.  
-- Returning an issued book.  
-- Maintaining the quantity of each book.  
+The project focuses on core functionalities and does not include advanced authentication, database integration, or GUI. However, the design will be modular so that new features can be added easily in the future.
 
-The scope is limited to basic inventory management and does not include advanced features  
-like user login, fine calculation, or database storage.
+## 🔹 Target Users
+- Students who want to search or issue books  
+- Librarians who want to maintain book records  
+- Educational institutions with small internal libraries  
 
-## 3. Target Users
-This system is mainly useful for:
+This system is ideal for academic environments where quick access and simple operations are needed.
 
-- Students.  
-- Small libraries.  
-- Teachers who manage books in classrooms.  
-- Beginners learning Java and OOP concepts.
-  
-## **4. High-Level Features**  
+## 🔹 High-Level Features
+1. **Add Book Module** – Allows the user to add new books by providing ID, name, author, and quantity.  
+2. **View Books Module** – Displays all books currently stored in the system.  
+3. **Issue Book Module** – Decreases quantity when a user issues a book.  
+4. **Return Book Module** – Increases quantity when a book is returned.  
+5. **Simple Menu Navigation** – A user-friendly console interface for performing all actions.
 
-###  **a. Add Book**  
-Allows the user to add a new book with its details. The book is stored in an ArrayList.
+## 🔹 Additional Notes
+- The system follows Object-Oriented Programming concepts.  
+- The design supports modularity, scalability, and easy maintainability.  
+- Can be enhanced later with GUI or database storage.
 
-###  **b. View Books**  
-Displays all the books in the library along with ID, name, author, and available quantity.
 
-###  **c. Issue Book**  
-Issues a book by checking availability and reducing its quantity. Shows proper messages like “Book issued” or “Book not available”.
-
-###  **d. Return Book**  
-Returns a previously issued book and increases its quantity.
-
-## **5. Functional Requirements**  
-- The system must allow adding at least one book.  
-- The user must be able to view the list of books.  
-- The system must allow issuing and returning books.  
-- There must be a proper menu-driven workflow.
-  
-  ## **6. Non-Functional Requirements**  
-- **Usability:** Easy menu and simple input-output.  
-- **Performance:** Fast execution using ArrayList.  
-- **Error Handling:** Shows clear messages for invalid choices or unavailable books.  
-- **Maintainability:** Code is divided into separate classes and is easy to update.
-## **7. Workflow (Simple Explanation)**  
-1. User opens the program.  
-2. Menu appears.  
-3. User selects an option.  
-4. System performs that operation.  
-5. Menu appears again.  
-6. User can exit anytime.
-
-## **8. System Modules**  
-- **Book.java:** Represents the structure of a book.  
-- **Library.java:** Handles add, view, issue, return operations.  
-- **Utils.java:** Helps take input cleanly.  
-- **Main.java:** Runs the menu-based system.
-
-## **9. Tools & Technologies Used**  
-- Java  
-- OOP Concepts  
-- ArrayList  
-- Scanner (for input)
-
-  
-This document explains the core idea, features, and scope of the project in a simple and understandable way.
