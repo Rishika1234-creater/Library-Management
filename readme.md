@@ -82,7 +82,7 @@ src/
 - Searching books by name or author  
 - GUI (Graphical Interface)
 
-##  Author
+##  Made By
 
 **Rishika Sinha**  
 Built with simple logic, clean code, and lots of learning.
